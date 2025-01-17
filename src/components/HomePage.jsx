@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight, CheckCircle, ChevronDown } from 'lucide-react';
-import Header from './Header';
 
 const HomePage = () => {
   const features = [
@@ -12,7 +11,7 @@ const HomePage = () => {
 
   return (
     <>
-    <Header/>
+   
     <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
