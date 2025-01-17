@@ -63,7 +63,6 @@ const HomePage = () => {
                 </div>
               </div>
 
-              {/* Scroll Indicator */}
               <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 hidden sm:block">
                 <button className="animate-bounce bg-white p-2 rounded-full shadow-lg">
                   <ChevronDown className="h-6 w-6 text-gray-600" />
@@ -71,7 +70,6 @@ const HomePage = () => {
               </div>
             </div>
 
-            {/* Trusted By Section */}
             <div className="w-full pb-16 sm:pb-20">
               <p className="text-center text-sm font-medium text-gray-500 mb-8">
                 TRUSTED BY LEADING COMPANIES

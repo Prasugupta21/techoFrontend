@@ -7,7 +7,7 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
 
   const navItems = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     
     { name: 'Services', href: '/services' },
     { name: 'About Us', href: '/about' },
@@ -21,9 +21,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-14 sm:h-16 md:h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <span className="text-lg sm:text-xl md:text-2xl font-bold text-indigo-600">
+            <Link to={'/'} className="text-lg sm:text-xl md:text-2xl font-bold text-indigo-600">
             TechNova Innovations
-            </span>
+            </Link>
           </div>
 
           <nav className="hidden md:flex items-center gap-2 lg:gap-4">
