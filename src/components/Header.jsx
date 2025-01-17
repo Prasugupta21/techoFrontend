@@ -7,14 +7,10 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '#' },
-    { 
-      name: 'Products', 
-      href: '#',
-      dropdown: ['Product 1', 'Product 2', 'Product 3']
-    },
-    { name: 'Services', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Contact', href: '#' }
+    
+    { name: 'Services', href: '/services' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Contact', href: '/contact' }
   ];
 
   return (
