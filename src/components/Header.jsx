@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,12 +52,12 @@ const Header = () => {
                     </div>
                   </div>
                 ) : (
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="text-gray-600 hover:text-indigo-600 px-3 py-2 text-sm lg:text-base font-medium"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
@@ -97,23 +98,23 @@ const Header = () => {
                     {/* Mobile Dropdown */}
                     <div className={`${activeDropdown === item.name ? 'block' : 'hidden'} pl-4`}>
                       {item.dropdown.map((subItem) => (
-                        <a
+                        <Link
                           key={subItem}
-                          href="#"
+                          to={"#"}
                           className="block text-gray-500 hover:text-indigo-600 px-3 py-2 rounded-md text-sm"
                         >
                           {subItem}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
                 ) : (
-                  <a
-                    href={item.href}
+                  <Link
+                    to={item.href}
                     className="block text-gray-600 hover:text-indigo-600 hover:bg-gray-50 px-3 py-2 rounded-md text-base font-medium"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 )}
               </div>
             ))}
